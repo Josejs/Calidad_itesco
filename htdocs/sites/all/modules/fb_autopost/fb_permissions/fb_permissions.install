@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Installation file.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function fb_permissions_uninstall() {
+  variable_del('fb_permissions_facebook_permissions');
+}
